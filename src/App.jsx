@@ -4,6 +4,11 @@ import Result from './Result';
 import HousesProgress from './HouseProgress';
 import quizData from './quizData';
 
+function randomizeQuestions(questions) {
+  return questions.sort(() => Math.random() - 0.5);
+}
+
+
 function App() {
   const [answers, setAnswers] = useState({
     Gryffindor: 0,
@@ -12,6 +17,7 @@ function App() {
     Slytherin: 0
   });
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const questions = randomizeQuestions(quizData.Questions);
 
   // logic to handle when a user selects an answer
   function handleAnswerSelection(value) {
@@ -30,17 +36,21 @@ function App() {
     <div className="App">
       <h1>{quizData.QuizTitle}</h1>
 
-      {currentQuestion < quizData.Questions.length ? (
+      {currentQuestion < questions.length ? (
         <div>
           <HousesProgress answers={answers} numberOfQuestions={currentQuestion} />
           <Question
-            question={quizData.Questions[currentQuestion].Question}
-            answers={quizData.Questions[currentQuestion].Answers}
+            question={questions[currentQuestion].Question}
+            answers={questions[currentQuestion].Answers}
             onAnswerSelection={handleAnswerSelection}
           />
         </div>
       ) : (
-        <Result houseRank={determineHouseRank()} />
+        <div>
+          <HousesProgress answers={answers} numberOfQuestions={currentQuestion} />
+          <Result houseRank={determineHouseRank()} />
+        </div>
+        
       )}
     </div>
   );
