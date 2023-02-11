@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Question from './Question';
 import Result from './Result';
 import HousesProgress from './HouseProgress';
-import quizData from './quizData';
+import quizData from './quizdata';
 
 function randomizeQuestions(questions) {
   return questions.sort(() => Math.random() - 0.5);
