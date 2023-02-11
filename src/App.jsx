@@ -1,28 +1,29 @@
 import React, { useState } from 'react';
 import Question from './Question';
 import Result from './Result';
+import HousesProgress from './HouseProgress';
 import quizData from './quizData';
 
-const quizDatqa = {
-  "QuizTitle": "Which Harry Potter House Do You Belong In?",
-  "Questions": [
-  ]
-};
-
 function App() {
-  const [answers, setAnswers] = useState({});
+  const [answers, setAnswers] = useState({
+    Gryffindor: 0,
+    Hufflepuff: 0,
+    Ravenclaw: 0,
+    Slytherin: 0
+  });
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
   // logic to handle when a user selects an answer
   function handleAnswerSelection(value) {
-    setAnswers({...answers, [value]: answers[value] + 1 || 1});
+    setAnswers({ ...answers, [value]: answers[value] + 1 || 1 });
     setCurrentQuestion(currentQuestion + 1);
-    console.log(answers);
   }
 
   // logic to determine the user's house based on their answers
-  function determineHouse() {
-    // ...
+  function determineHouseRank() {
+    const houses = Object.keys(answers);
+    const houseRank = houses.sort((a, b) => answers[b] - answers[a]);
+    return houseRank;
   }
 
   return (
@@ -30,13 +31,16 @@ function App() {
       <h1>{quizData.QuizTitle}</h1>
 
       {currentQuestion < quizData.Questions.length ? (
-        <Question
-          question={quizData.Questions[currentQuestion].Question}
-          answers={quizData.Questions[currentQuestion].Answers}
-          onAnswerSelection={handleAnswerSelection}
-        />
+        <div>
+          <HousesProgress answers={answers} numberOfQuestions={currentQuestion} />
+          <Question
+            question={quizData.Questions[currentQuestion].Question}
+            answers={quizData.Questions[currentQuestion].Answers}
+            onAnswerSelection={handleAnswerSelection}
+          />
+        </div>
       ) : (
-        <Result house={determineHouse()} />
+        <Result houseRank={determineHouseRank()} />
       )}
     </div>
   );
