@@ -1,0 +1,574 @@
+{
+    "QuizTitle": "Which Harry Potter House Do You Belong In?",
+    "Questions": [
+      {
+        "Question": "What are your values?",
+        "Answers": [
+          {
+            "Option": "Bravery, daring, and chivalry",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Fair play, patience, loyalty, and hard work",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Intelligence, creativity, and wit",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Ambition, cunning, and resourcefulness",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What do you enjoy most about school?",
+        "Answers": [
+          {
+            "Option": "Participating in exciting and daring adventures",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Making new friends and helping others",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Learning new and interesting subjects",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Being at the top of your class and being recognized for your achievements",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What do you believe is the most important quality in a person?",
+        "Answers": [
+          {
+            "Option": "Courage and bravery",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Kindness and fairness",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Intelligence and wit",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Ambition and determination",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "When faced with a difficult challenge, what is your natural reaction?",
+        "Answers": [
+          {
+            "Option": "To charge forward and face the challenge head-on",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "To persevere and find a solution through hard work",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "To analyze the situation and find a creative solution",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "To find a way to outsmart the competition and come out on top",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What do you believe is the key to success?",
+        "Answers": [
+          {
+            "Option": "Never giving up and facing challenges head-on",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Doing your best and being fair to others",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Constantly seeking knowledge and being creative",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Being cunning and finding the quickest way to the top",
+            "Value": "Slytherin"
+          }
+        ]
+    },
+    {
+        "Question": "What are your values?",
+        "Answers": [
+          {
+            "Option": "Bravery, daring, and chivalry",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Fair play, patience, loyalty, and hard work",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Intelligence, creativity, and wit",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Ambition, cunning, and resourcefulness",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "How do you approach challenges?",
+        "Answers": [
+          {
+            "Option": "I charge in headfirst without hesitation",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "I think things through carefully before acting",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "I rely on my cunning to overcome obstacles",
+            "Value": "Slytherin"
+          },
+          {
+            "Option": "I work hard and never give up",
+            "Value": "Hufflepuff"
+          }
+        ]
+      },
+      {
+        "Question": "What do you value most in friends?",
+        "Answers": [
+          {
+            "Option": "Loyalty and trustworthiness",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Intelligence and wit",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Bravery and daring",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Ambition and resourcefulness",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What is your greatest fear?",
+        "Answers": [
+          {
+            "Option": "Failing or making mistakes",
+            "Value": "Slytherin"
+          },
+          {
+            "Option": "Being unpopular or not fitting in",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Being helpless or powerless",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Being dishonorable or cowardice",
+            "Value": "Gryffindor"
+          }
+        ]
+      },
+      {
+        "Question": "What is your preferred way to relax?",
+        "Answers": [
+          {
+            "Option": "Exploring new places and trying new things",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Spending time in nature or with loved ones",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Reading a book or learning something new",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Plotting and scheming for the future",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What is your idea of a perfect day?",
+        "Answers": [
+          {
+            "Option": "A day filled with adventure and excitement",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "A day of hard work and productivity",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "A day of knowledge and learning",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "A day of successful plotting and scheming",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What is your favorite subject in school?",
+        "Answers": [
+          {
+            "Option": "History or ancient lore",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Charms or Defense Against the Dark Arts",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Herbology or Care of Magical Creatures",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Potions or Dark Arts",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What is your preferred leadership style?",
+        "Answers": [
+          {
+            "Option": "Charismatic and inspiring",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Fair and just",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Intelligent and strategic",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Efficient and results-driven",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What is your biggest fear?",
+        "Answers": [
+          {
+            "Option": "Losing those you care about",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Failure or disappointment",
+            "Value": "Slytherin"
+          },
+          {
+            "Option": "Injustice or cruelty",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "The unknown or the unexpected",
+            "Value": "Ravenclaw"
+          }
+        ]
+      },
+      {
+        "Question": "What is your approach to problem-solving?",
+        "Answers": [
+          {
+            "Option": "Acting quickly and impulsively",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Taking a step back and analyzing the situation",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Working together with others to find a solution",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Being resourceful and finding a practical solution",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What is your idea of success?",
+        "Answers": [
+          {
+            "Option": "Making a positive impact on others",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Achieving personal goals and ambitions",
+            "Value": "Slytherin"
+          },
+          {
+            "Option": "Gaining recognition and status",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Expanding knowledge and understanding",
+            "Value": "Ravenclaw"
+          }
+        ]
+      },
+      {
+        "Question": "How do you handle stress or pressure?",
+        "Answers": [
+          {
+            "Option": "Throwing yourself into work or activity",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Relying on loved ones for support",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Taking time to think and plan",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Remaining calm and focused under pressure",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What is most important to you in a friendship?",
+        "Answers": [
+          {
+            "Option": "Loyalty and trust",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Shared values and interests",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Excitement and adventure",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Mutual benefit and support",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "How do you approach challenges?",
+        "Answers": [
+          {
+            "Option": "With determination and bravery",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "With patience and perseverance",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "With intelligence and resourcefulness",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "With cunning and strategy",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What is your preferred learning environment?",
+        "Answers": [
+          {
+            "Option": "Hands-on and interactive",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Supportive and collaborative",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Intellectually stimulating and challenging",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Efficient and results-focused",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What do you value most in a job or career?",
+        "Answers": [
+          {
+            "Option": "Helping others and making a difference",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Achieving success and recognition",
+            "Value": "Slytherin"
+          },
+          {
+            "Option": "Making a positive impact on the world",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Intellectual stimulation and creativity",
+            "Value": "Ravenclaw"
+          }
+        ]
+      },
+      {
+        "Question": "What kind of adventure do you prefer?",
+        "Answers": [
+          {
+            "Option": "A daring and daring quest",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "A journey filled with kindness and discovery",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "A trip to expand your knowledge and experience",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "A strategic and calculated journey",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What is your idea of a perfect evening?",
+        "Answers": [
+          {
+            "Option": "Spending time with friends and loved ones",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Pursuing personal interests and hobbies",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Taking on new challenges and experiences",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Networking and advancing your goals",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "In a group project, what role do you usually take on?",
+        "Answers": [
+          {
+            "Option": "The team motivator and cheerleader",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "The creative and innovative mind",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "The fearless leader and problem solver",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "The strategic planner and executor",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What is your idea of success?",
+        "Answers": [
+          {
+            "Option": "Having a strong sense of personal fulfillment and happiness",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Achieving recognition and status through your achievements",
+            "Value": "Slytherin"
+          },
+          {
+            "Option": "Making a positive impact on others and society",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Expanding your knowledge and expertise in your field",
+            "Value": "Ravenclaw"
+          }
+        ]
+      },
+      {
+        "Question": "In difficult times, what do you rely on?",
+        "Answers": [
+          {
+            "Option": "The support and encouragement of loved ones",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Your own inner strength and determination",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Your intelligence and problem-solving skills",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Your strategic thinking and resourcefulness",
+            "Value": "Slytherin"
+          }
+        ]
+      },
+      {
+        "Question": "What is your approach to decision-making?",
+        "Answers": [
+          {
+            "Option": "Considering the impact on others and following your heart",
+            "Value": "Hufflepuff"
+          },
+          {
+            "Option": "Analyzing all options and choosing the most logical solution",
+            "Value": "Ravenclaw"
+          },
+          {
+            "Option": "Going with your gut instinct and bravery",
+            "Value": "Gryffindor"
+          },
+          {
+            "Option": "Thoroughly weighing the consequences and making a calculated choice",
+            "Value": "Slytherin"
+          }
+        ]
+      }
+    ]
+}
+
+  
