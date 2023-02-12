@@ -9,11 +9,11 @@ import Leaderboard from './Leaderboard';
 
 const housesCollection = new HousesCollection();
 
-function randomizeQuestions(questions) {
-  return questions.sort(() => Math.random() - 0.5);
-}
 
 function App() {
+  function randomizeQuestions(questions) {
+    return questions.sort(() => Math.random() - 0.5);
+  }
   const [answers, setAnswers] = useState({
     Gryffindor: 0,
     Hufflepuff: 0,
@@ -21,6 +21,7 @@ function App() {
     Slytherin: 0
   });
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [questions, setQuestions] = useState(quizData.Questions);
   const [name, setName] = useState('');
   const [userLeaderboard, setUserLeaderboard] = useState([]);
   
@@ -30,7 +31,10 @@ function App() {
     });
   }, [userLeaderboard]);
 
-  const questions = randomizeQuestions(quizData.Questions);
+  useEffect(() => {
+    setQuestions(quizData.Questions);
+  }, []);
+
   const endNumberOfQuestions = questions.length;
 
   // logic to handle when a user selects an answer
