@@ -1,5 +1,11 @@
+import React, {useState, useEffect} from 'react';
 function Question({ question, answers, onAnswerSelection }) {
-    const ransomizedAnswers = answers.sort(() => Math.random() - 0.5);
+    const [ransomizedAnswers, setRansomizedAnswers] = useState([]);
+
+    useEffect(() => {
+        setRansomizedAnswers(answers.sort(() => Math.random() - 0.5));
+    }, [answers]);
+
     return (
         <div className="question">
             <p>{question}</p>

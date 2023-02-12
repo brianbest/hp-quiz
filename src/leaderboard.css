@@ -17,7 +17,7 @@
 }
 .leaderboard ul{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
     list-style: none;
     margin: 0;
     padding: 0;
@@ -36,4 +36,5 @@
     margin: 0;
     font-size: 1.2em;
     font-weight: 400;
+    text-align: center;
 }
