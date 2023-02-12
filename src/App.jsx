@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Question from './Question';
 import Result from './Result';
 import HousesProgress from './HouseProgress';
 import quizData from './quizdata';
+import HousesCollection from './firebase';
+import NameForm from './NameForm';
+import Leaderboard from './Leaderboard';
+
+const housesCollection = new HousesCollection();
 
 function randomizeQuestions(questions) {
   return questions.sort(() => Math.random() - 0.5);
 }
-
 
 function App() {
   const [answers, setAnswers] = useState({
@@ -17,12 +21,25 @@ function App() {
     Slytherin: 0
   });
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [name, setName] = useState('');
+  const [userLeaderboard, setUserLeaderboard] = useState([]);
+  
+  useEffect(() => {
+    housesCollection.getUserHouses().then((houses) => {
+      setUserLeaderboard(houses);
+    });
+  }, [userLeaderboard]);
+
   const questions = randomizeQuestions(quizData.Questions);
+  const endNumberOfQuestions = questions.length;
 
   // logic to handle when a user selects an answer
   function handleAnswerSelection(value) {
     setAnswers({ ...answers, [value]: answers[value] + 1 || 1 });
     setCurrentQuestion(currentQuestion + 1);
+    if (currentQuestion === endNumberOfQuestions - 1) {
+      housesCollection.addHouse(name, determineHouseRank());
+    }
   }
 
   // logic to determine the user's house based on their answers
@@ -35,23 +52,44 @@ function App() {
   return (
     <div className="App">
       <h1>{quizData.QuizTitle}</h1>
-
-      {currentQuestion < questions.length ? (
+      {name === '' ? (
         <div>
-          <HousesProgress answers={answers} numberOfQuestions={currentQuestion} />
-          <Question
-            question={questions[currentQuestion].Question}
-            answers={questions[currentQuestion].Answers}
-            onAnswerSelection={handleAnswerSelection}
-          />
+          <NameForm onSubmit={setName} />
         </div>
       ) : (
         <div>
-          <HousesProgress answers={answers} numberOfQuestions={currentQuestion} />
-          <Result houseRank={determineHouseRank()} />
+          {currentQuestion < endNumberOfQuestions ? (
+            <div>
+              {name == "elva" || name == "Elva" ? (
+                <h4 align="center">I LOVE YOU BOO BERRY!! Lets get you sorted!!</h4>
+              ):(
+                <h4 align="center">Lets sort you out {name}!</h4>
+              )}
+             
+              <HousesProgress answers={answers} numberOfQuestions={currentQuestion} />
+              <Question
+                question={questions[currentQuestion].Question}
+                answers={questions[currentQuestion].Answers}
+                onAnswerSelection={handleAnswerSelection}
+              />
+            </div>
+          ) : (
+            <div>
+              <HousesProgress answers={answers} numberOfQuestions={currentQuestion} />
+              <Result houseRank={determineHouseRank()} />
+              {userLeaderboard.length > 0 ? (
+                <Leaderboard users={userLeaderboard}/>
+              ):(
+                <div></div>
+              )}
+            </div>
+          )}
+         
         </div>
-        
+
       )}
+      
+     
     </div>
   );
 }
